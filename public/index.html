@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js" ></script>
+    <link type="text/css" href="./css/index.css/">
+</head>
+
+<body>
+
+    <div class="join" style="display: block;">
+        <table>
+            <tr>
+                <td>
+                        이름: <input id='nickname' type='text' value="">
+                </td>
+                <td>
+                    <button id='join1' onclick="join(1);"> 천안역콜벤방 접속하기 </button>
+                    <button id='join2' onclick="join(2);"> 터미널콜벤방 접속하기 </button>
+                    <button id='join3' onclick="join(3);"> KTX콜벤방 접속하기 </button>
+                    <button id='join4' onclick="join(4);"> 온양역콜벤방 접속하기 </button>
+                    <button id='join5' onclick="join(5);"> 아캠(본관)콜벤방 접속하기 </button>
+                    <button id='join6' onclick="join(6);"> 아캠(기숙사)콜벤방 접속하기 </button>
+                    <button id='join7' onclick="join(7);"> 아캠(셔틀버스)콜벤방 접속하기 </button>
+                    <button id='join8' onclick="join(8);"> 천캠(셔틀버스)콜벤방 접속하기 </button>
+                    <button id='join8' onclick="join(8);"> 전체콜벤방 접속하기 </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='j-footer' style="display: none;">
+        <div class="container">
+            <div class='j-message'> </div>
+            <div class='right-users'>
+
+
+            </div>
+        </div>
+
+        <b>Send message</b>
+        <table>
+            <tr>
+                <td>
+                    <input id='message-input' type='text' value="">
+                </td>
+                <td>
+                    <button id='message-button' type='submit'> 전송 </button>
+                </td>
+                <td>
+                    <button id="close" onclick="close();" > 나가기 </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

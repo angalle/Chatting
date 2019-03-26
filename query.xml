@@ -1,0 +1,10 @@
+<query>
+	<!--로그인 -->
+	<LOGIN_USER>
+		SELECT *
+		FROM MEMBER_INFO
+		WHERE MEMBER_EMAIL like '%s'
+	</LOGIN_USER>
+
+
+</query>
